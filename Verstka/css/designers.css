@@ -1,0 +1,146 @@
+.designers {
+  width: 100%;
+  min-height: 50vh;
+  background: #E6E7DF;
+}
+
+.designers_container {
+  width: 75%;
+  min-height: 50vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.designers_textcolumn {
+  width: calc(100% / 4);
+  display: flex;
+  flex-direction: column;
+}
+
+.designers_textcolumn-headline {
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.6vh;
+  margin-bottom: 0;
+}
+
+.designers_textcolumn-p {
+  max-width: 80%;
+  color: #333333;
+  font-weight: 300;
+  font-size: 1.6vh;
+}
+
+.designers_textcolumn-p1 {
+  margin-bottom: .5vh;
+}
+
+.designers_textcolumn-p2 {
+  margin-bottom: .5vh;
+}
+
+.designers_actor {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5vh;
+  margin-right: 1.5vh;
+}
+
+.designers_actor-photo {
+  width: 30vh;
+}
+
+.designers_actor-name {
+  color: #333333;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.6vh;
+  margin-bottom: 0;
+}
+
+.designers_actor-post {
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 1.5vh;
+  margin-top: 0;
+}
+
+.designers_actor_acts {
+  display: flex;
+}
+
+.designers_actor_acts_left {
+  width: 30%;
+  display: flex;
+}
+
+.designers_actor_acts-link {
+  color: #fd5000;
+  transition: .2s;
+}
+
+.designers_actor_acts-link:hover {
+  color: #DD3000;
+}
+
+.designers_actor_acts-link:hover {
+  color: #EF4200;
+}
+
+.designers_actor_acts_right {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.designers_actor_acts-linksoc {
+  color: #fd5000;
+  margin-left: .5vh;
+  margin-right: .5vh;
+  transition: .2s;
+}
+
+.designers_actor_acts-linksoc:hover {
+  color: #DD3000;
+}
+
+.designers_actor_acts-linksoc:hover {
+  color: #EF4200;
+}
+
+@media(min-width: 530px) and (max-width: 1365px) {
+  .designers_container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .designers_textcolumn {
+    width: 100%;
+    align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    text-align: center;
+  }
+  .designers_actor {
+    margin-bottom: 5vh;
+  }
+}
+
+@media(min-width: 320px) and (max-width: 529px) {
+  .designers_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .designers_textcolumn {
+    width: 100%;
+    align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+  }
+  .designers_actor {
+    margin-bottom: 5vh;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

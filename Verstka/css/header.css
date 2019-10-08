@@ -13,11 +13,14 @@
 .header_left {
   width: calc((100% / 3) * 2);
   min-height: 100%;
-  background: #E6E7DF;
+  background: url('../img/chair-bg(edit3).png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .header_left_container {
-  width: 75%;
+  width: 70%;
   min-height: 100%;
   margin: 0 auto;
   display: flex;
@@ -61,18 +64,111 @@
 }
 
 .header-img {
-  width: 90vh;
-  height: 45vh;
+  width: 70vh;
+  height: 50vh;
 }
 
 .header_right {
   width: calc(100% / 3);
   min-height: 100%;
-  background: #73C8BC;
+  background: rgb(115,200,188);
+  background: linear-gradient(to top left, rgba(115,200,188,1) 49.8%, rgba(255,255,255,1) 50%, rgba(115,200,188,1) 50.1%);
 }
 
 .header_right_container {
   width: 75%;
   min-height: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-navbtn {
+  width: 13vh;
+  height: 12vh;
+  background: transparent;
+  border: 2px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 3vh;
+  align-self: center;
+  transition: .2s;
+  margin-top: 5vh;
+  margin-bottom: 11vh;
+}
+
+.header-navbtn:hover {
+  background: rgb(110, 195, 183);
+}
+
+.header-navbtn:active {
+  background: rgb(114, 199, 187);
+}
+
+.header-address {
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 1.35vh;
+  font-size: 1.35vh;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 3vh;
+}
+
+.header-contacts {
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 1.35vh;
+  font-size: 1.35vh;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-left: 9vh;
+}
+
+@media (min-width: 600px) and (max-width: 1299px) {
+  .header_left {
+    background: url('../img/chair-bg(1299px).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .header_left_container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 599px) {
+  .header_left {
+    background: url('../img/chair-bg(599px).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .header_left_container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+  .header_left {
+    width: 50%;
+    background: #E7E7DF;
+  }
+  .header_left_container {
+    width: 70%;
+  }
+  .header_right {
+    width: 50%;
+  }
+  .header-contacts {
+    font-size: 1.8vh;
+    line-height: 2vh;
+  }
+  .header-address {
+    font-size: 1.8vh;
+    line-height: 2vh;
+  }
 }

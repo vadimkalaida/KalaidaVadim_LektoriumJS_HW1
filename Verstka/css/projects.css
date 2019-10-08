@@ -1,0 +1,715 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.projects_main {
+  width: calc(100% / 3);
+  min-height: 50vh;
+  background: rgb(115,200,188);
+  background: linear-gradient(to top left, rgba(231,169,66,1) 49.8%, rgba(255,255,255,1) 50%, rgba(231,169,66,1) 50.1%);
+}
+
+.projects_main_container {
+  width: 80%;
+  min-height: 50vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects_menu {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.projects_menu_list {
+  display: flex;
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.projects_menu_list-arrow {
+  position: absolute;
+  left: -20px;
+  bottom: 0;
+  opacity: 0;
+  color: #ffffff;
+  transition: .2s;
+}
+
+.projects_menu_list-item {
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.60vh;
+  font-size: 1.5vh;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 0;
+  z-index: 999999;
+  transition: .2s;
+}
+
+.projects_menu_list-item:hover {
+  color: #000;
+}
+
+.projects_main-headline {
+  color: #fefefe;
+  text-transform: uppercase;
+  font-size: 4vh;
+  align-self: flex-end;
+  justify-self: center;
+  margin-top: 0;
+  margin-bottom: 10vh;
+  font-weight: 400;
+}
+
+.projects_fondue {
+  width: calc(100% / 3);
+  min-height: 50vh;
+  background: url('../img/fondue-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.projects_fondue_container {
+  width: 70%;
+  min-height: 50vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-headline {
+  color: #333333;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 3vh;
+}
+
+.projects_fondue-headline {
+  margin-top: 8vh;
+  margin-bottom: 2vh;
+}
+
+.projects_fondue_text {
+  margin-bottom: 3.85vh;
+}
+
+.projects-text {
+  color: #333333;
+  font-size: 1.3vh;
+  font-weight: 300;
+}
+
+.projects_fondue-about {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.projects_fondue-about span {
+  font-weight: bold;
+}
+
+.projects-view {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #333333;
+  font-size: 2vh;
+  width: 14.5vh;
+}
+
+.projects-view i {
+  color: #ebb240;
+}
+
+.projects_fondue-view {
+  margin-top: 0;
+  margin-bottom: 10vh;
+}
+
+.projects-like {
+  display: flex;
+  flex-direction: column;
+  color: #ff0000;
+  font-weight: 300;
+  font-size: 1.3vh;
+  transition: .2s;
+  width: 1vh;
+  align-items: center;
+}
+
+.projects-like i {
+  font-size: 2.1vh;
+  color: #333333;
+  transition: .2s;
+  padding-bottom: 0.1vh;
+}
+
+.projects-like i:hover {
+  color: #ff0000;
+}
+
+.projects_fondue-like {
+  margin-top: 0;
+  margin-left: 6.5vh;
+}
+
+.projects_potter {
+  width: calc(100% / 3);
+  height: 33vh;
+  background: url('../img/potter-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.projects_potter_container {
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects_potter-headline {
+  margin-bottom: 1.5vh;
+}
+
+.projects_potter-text {
+  color: #333333;
+  font-size: 1.35vh;
+  font-weight: 300;
+  margin-top: 0;
+  max-width: 40%;
+}
+
+.projects_potter-textspan1 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.projects_potter-textspan2 {
+  text-transform: uppercase;
+}
+
+.projects_potter-view {
+  margin-top: 0;
+  margin-bottom: 2.5vh;
+}
+
+.projects_potter-like {
+  margin-top: 0;
+  margin-left: 6.5vh;
+}
+
+.projects_louis {
+  width: calc(100% / 4.5);
+  min-height: 50vh;
+  background: url('../img/louis-bg(edit3).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projects_louis_container {
+  width: 80%;
+  min-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects_louis-headline {
+  color: #fff;
+  margin-bottom: 2vh;
+}
+
+.projects_louis_text {
+  margin-top: 0;
+  margin-bottom: 4vh;
+}
+
+.projects_louis-about {
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.projects_louis-view {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 2.5vh;
+}
+
+.projects_louis-like {
+  margin-top: 0;
+  margin-left: 8vh;
+}
+
+.projects_louis-like i {
+  color: #fff;
+}
+
+.projects_louis-about span {
+  font-weight: bold;
+}
+
+.projects_p22 {
+  width: calc((100% / 4.5) * 2);
+  min-height: 50vh;
+  background: url('../img/p22-bg(edit).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.projects_p22_container {
+  width: 80%;
+  min-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.projects_p22_about {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.projects_p22-headline {
+  margin-top: 6vh;
+  margin-bottom: 2vh;
+  text-align: left;
+}
+
+.projects_p22_text {
+  margin-top: 0;
+}
+
+.projects_p22-p {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase
+}
+
+.projects_p22-p span {
+  font-weight: bold;
+}
+
+.projects_p22_act {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6.5vh;
+}
+
+.projects_p22-view {
+  margin-bottom: 3vh;
+}
+
+.projects_tabano {
+  width: calc((100% / 4.5) * 1.5);
+  height: 45vh;
+  background: url('../img/tabano-bg(edit).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: -19vh;
+}
+
+.projects_tabano_container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+.projects_tabano_about {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects_tabano-headline {
+  margin-top: 0;
+  margin-bottom: 1vh;
+  text-align: left;
+}
+
+.projects_tabano_text {
+  margin-top: 0;
+  margin-bottom: 4.5vh;
+}
+
+.projects_tabano-p {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase
+}
+
+.projects_tabano-p span {
+  font-weight: bold;
+}
+
+.projects_tabano_act {
+  display: flex;
+  text-align: center;
+  justify-content: flex-end;
+  width: 60%;
+}
+
+.projects_tabano-view {
+  margin-bottom: 9vh;
+  margin-right: 2vh;
+}
+
+.projects_tabano-like {
+  margin-bottom: 7.4vh;
+}
+
+.projects_sesann {
+  width: calc((100% / 4.5) * 2);
+  height: 35vh;
+  background: url('../img/sesann-bg(edit).png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.projects_sesann_container {
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+}
+
+.projects_sesann_about {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects_sesann-headline {
+  margin-bottom: 1vh;
+  text-align: left;
+}
+
+.projects_sesann_text {
+  margin-top: 0;
+  margin-bottom: 1.5vh;
+}
+
+.projects_sesann-p {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase
+}
+
+.projects_sesann-p span {
+  font-weight: bold;
+}
+
+.projects_sesann_act {
+  width: 70%;
+  display: flex;
+  margin-bottom: 4.7vh;
+  justify-content: flex-end;
+  justify-self: flex-end;
+}
+
+.projects_sesann-view {
+  margin-right: 2vh;
+}
+
+.projects_alessi {
+  width: calc(100% / 4.5);
+  min-height: 35vh;
+  background: url('../img/alessi-bg(edit).png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.projects_alessi_container {
+  width: 90%;
+  min-height: 35vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.projects_alessi-headline {
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+  margin-right: 5vh;
+}
+
+.projects_alessi_text {
+  margin-bottom: 3.85vh;
+}
+
+.projects_alessi-about {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.projects_alessi-about span {
+  font-weight: bold;
+}
+
+.projects_alessi-view {
+  margin-top: 0;
+  margin-bottom: 2vh;
+  margin-right: 5vh;
+}
+
+.projects_alessi-like {
+  margin-top: 0;
+  margin-right: 11vh;
+}
+
+.projects_fiji {
+  width: calc((100% / 4.5) * 1.5);
+  height: 24vh;
+  background: url('../img/fiji-bg(edit).png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: -24vh;
+}
+
+.projects_fiji_container {
+  width: 90%;
+  height: 25vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.projects_fiji-headline {
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+  margin-right: 12vh;
+}
+
+.projects_fiji_text {
+  margin-bottom: 1.85vh;
+}
+
+.projects_fiji-about {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.projects_fiji-about span {
+  font-weight: bold;
+}
+
+.projects_fiji-view {
+  margin-top: 0;
+  margin-bottom: 1vh;
+  margin-right: 6vh;
+}
+
+.projects_fiji-like {
+  margin-top: 0;
+  margin-right: 12vh;
+}
+
+.projects_timeline {
+  width: calc(100% / 3);
+  height: 35vh;
+  background: rgb(235,178,64);
+  background: linear-gradient(to top left, rgba(235,178,64,1) 49.8%, rgba(255,255,255,1) 50%, rgba(235,178,64,1) 50.1%);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.projects_timeline_container {
+  width: 75%;
+  height: 35vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects_timeline-headline {
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 1.6vh;
+  font-weight: bold;
+  margin-top: 5vh;
+  margin-bottom: 1vh;
+}
+
+.projects_timeline_list {
+  display: flex;
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.projects_timeline_list-arrow {
+  position: absolute;
+  left: -20px;
+  bottom: 0;
+  opacity: 0;
+  color: #ffffff;
+  transition: .2s;
+}
+
+.projects_timeline_list-item {
+  color: #fff;
+  font-weight: 400;
+  line-height: 1.60vh;
+  font-size: 1.5vh;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  margin-top: 0;
+  z-index: 999999;
+  transition: .2s;
+}
+
+.projects_timeline_list-item:hover {
+  color: #000;
+}
+
+@media(min-width: 340px) and (max-width: 450px) {
+  .projects_main-headline {
+    font-size: 3vh;
+  }
+}
+
+@media(min-width: 320px) and (max-width: 339px) {
+  .projects_main-headline {
+    font-size: 2.8vh;
+  }
+}
+
+@media(min-width: 530px) and (max-width: 930px) {
+  .projects_main {
+    width: calc(100% / 2);
+  }
+  .projects_project {
+    width: calc(100% / 2);
+  }
+  .projects_p22 {
+    margin-top: -17vh;
+    height: 50vh;
+  }
+  .projects_tabano {
+    margin-top: 0;
+  }
+  .projects_sesann {
+    background: url('../img/sesann-bg(edit2).png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: -12.5vh;
+    height: 50vh;
+  }
+  .projects_sesann_text {
+    margin-bottom: 5vh;
+  }
+
+  .projects_sesann_act {
+    margin-bottom: 8.7vh;
+  }
+  .projects_fiji {
+    margin-top: 0;
+    height: 35vh;
+  }
+  .projects_fiji-headline {
+    margin-top: 6vh;
+  }
+  .projects_fiji_text {
+    margin-bottom: 4vh;
+  }
+  .projects_fiji-view {
+    margin-bottom: 2vh;
+  }
+  .projects_fiji-like {
+    margin-right: 12.5vh;
+  }
+  .projects_timeline {
+    bottom: 0vh;
+  }
+}
+
+@media(min-width: 320px) and (max-width: 529px) {
+  .projects {
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects_main {
+    width: 100%;
+  }
+  .projects_menu_list-item {
+    font-size: 2.5vh;
+    line-height: 2.5vh;
+  }
+  .projects_project {
+    width: 100%;
+    min-height: 50vh;
+  }
+  .projects_main-headline {
+    font-size: 5vh;
+  }
+  .projects-headline {
+    font-size: 3.5vh;
+  }
+  .projects-text {
+    font-size: 1.8vh;
+  }
+  .projects_potter-text {
+    margin-bottom: 3.85vh;
+  }
+  .projects-view {
+    margin-bottom: 7.5vh;
+  }
+  .projects-like {
+    font-size: 1.8vh;
+  }
+  .projects_p22 {
+    background: url('../img/p22-bg(edit2).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .projects_p22-p {
+    margin-left: 2vh;
+  }
+  .projects_tabano {
+    margin-top: 0;
+  }
+  .projects_fiji {
+    margin-top: 0;
+    background: url('../img/fiji-bg(edit2).png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .projects_timeline-headline {
+    font-size: 2.2vh;
+  }
+  .projects_timeline_list-item {
+    font-size: 2.1vh;
+    line-height: 2.5vh;
+  }
+}
