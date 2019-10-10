@@ -1,10 +1,14 @@
-var myArray = [3,0,-5,1,44,null, undefined, 'hello',-12,3,0,0,1,2,-3,-3,2,1,4,-2,-3,-1];
+var myArray = [3,0,-5,NaN,1,44,null, undefined, 'hello',-12,3,0,0,1,2,-3,-3,2,1,4,-2,-3,-1];
 
 function sumArray(arr) {
   var sum = 0;
   for(i = 0; i < arr.length; i++) {
     if(typeof(arr[i]) === 'number') {
-      sum += arr[i];
+      if(isNaN(arr[i])) {
+        sum = sum;
+      } else {
+        sum += arr[i];
+      }
     } else {
       sum = sum;
     }
@@ -17,7 +21,11 @@ function maxArray(arr) {
   for(i = 0; i < arr.length; i++) {
     if(typeof(arr[i]) === 'number') {
       if(arr[i] >= myMax) {
-        myMax = arr[i];
+        if(isNaN(arr[i])) {
+          myMax = myMax;
+        } else {
+          myMax = arr[i];
+        }
       }
     } else {
       myMax = myMax;
@@ -31,7 +39,11 @@ function minArray(arr) {
   for(i = 0; i < arr.length; i++) {
     if(typeof(arr[i]) === 'number') {
       if(arr[i] <= myMin) {
-        myMin = arr[i];
+        if(isNaN(arr[i])) {
+          myMin = myMin;
+        } else {
+          myMin = arr[i];
+        }
       } else {
         myMin = myMin;
       }
